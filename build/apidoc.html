@@ -1,0 +1,633 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >asterisk-ami (v0.1.0)</a>
+</h1>
+<h4>An asterisk ami connector</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.asterisk-ami">module asterisk-ami</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.asterisk-ami">
+            function <span class="apidocSignatureSpan"></span>asterisk-ami
+            <span class="apidocSignatureSpan">(params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi">
+            function <span class="apidocSignatureSpan">asterisk-ami.</span>AsteriskAmi
+            <span class="apidocSignatureSpan">(params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.super_">
+            function <span class="apidocSignatureSpan">asterisk-ami.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">asterisk-ami.</span>AsteriskAmi.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.asterisk-ami.AsteriskAmi">module asterisk-ami.AsteriskAmi</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.AsteriskAmi">
+            function <span class="apidocSignatureSpan">asterisk-ami.</span>AsteriskAmi
+            <span class="apidocSignatureSpan">(params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.super_">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.asterisk-ami.AsteriskAmi.prototype">module asterisk-ami.AsteriskAmi.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.connect">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>connect
+            <span class="apidocSignatureSpan">(connect_cb, data_cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.debug">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>debug
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.destroy">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>destroy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.disconnect">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>disconnect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateRandom">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>generateRandom
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateSocketData">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>generateSocketData
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.processData">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>processData
+            <span class="apidocSignatureSpan">(data, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.send">
+            function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>send
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.asterisk-ami" id="apidoc.module.asterisk-ami">module asterisk-ami</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.asterisk-ami" id="apidoc.element.asterisk-ami.asterisk-ami">
+        function <span class="apidocSignatureSpan"></span>asterisk-ami
+        <span class="apidocSignatureSpan">(params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AsteriskAmi(params){
+  params = params || {};
+
+  this.net = net;
+
+  this.CRLF = &#x22;\r\n&#x22;;
+  this.END = &#x22;\r\n\r\n&#x22;;
+  this.buffer = &#x22;&#x22;;
+
+  this.port = params.port || 5038;
+  this.host = params.host || &#x27;localhost&#x27;;
+  this.username = params.username || &#x27;username&#x27;;
+  this.password = params.password || &#x27;password&#x27;;
+  this.enable_debug = params.debug || false;
+  this.reconnect = params.reconnect || false;
+  this.reconnect_after = params.reconnect_after || 3000;
+  this.events = (params.events != undefined ? params.events : true);
+  this.identifier = params.identifier || false;
+  this.ami_encoding = params.ami_encoding || &#x27;ascii&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi" id="apidoc.element.asterisk-ami.AsteriskAmi">
+        function <span class="apidocSignatureSpan">asterisk-ami.</span>AsteriskAmi
+        <span class="apidocSignatureSpan">(params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AsteriskAmi(params){
+  params = params || {};
+
+  this.net = net;
+
+  this.CRLF = &#x22;\r\n&#x22;;
+  this.END = &#x22;\r\n\r\n&#x22;;
+  this.buffer = &#x22;&#x22;;
+
+  this.port = params.port || 5038;
+  this.host = params.host || &#x27;localhost&#x27;;
+  this.username = params.username || &#x27;username&#x27;;
+  this.password = params.password || &#x27;password&#x27;;
+  this.enable_debug = params.debug || false;
+  this.reconnect = params.reconnect || false;
+  this.reconnect_after = params.reconnect_after || 3000;
+  this.events = (params.events != undefined ? params.events : true);
+  this.identifier = params.identifier || false;
+  this.ami_encoding = params.ami_encoding || &#x27;ascii&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.super_" id="apidoc.element.asterisk-ami.super_">
+        function <span class="apidocSignatureSpan">asterisk-ami.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.asterisk-ami.AsteriskAmi" id="apidoc.module.asterisk-ami.AsteriskAmi">module asterisk-ami.AsteriskAmi</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.AsteriskAmi" id="apidoc.element.asterisk-ami.AsteriskAmi.AsteriskAmi">
+        function <span class="apidocSignatureSpan">asterisk-ami.</span>AsteriskAmi
+        <span class="apidocSignatureSpan">(params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AsteriskAmi(params){
+  params = params || {};
+
+  this.net = net;
+
+  this.CRLF = &#x22;\r\n&#x22;;
+  this.END = &#x22;\r\n\r\n&#x22;;
+  this.buffer = &#x22;&#x22;;
+
+  this.port = params.port || 5038;
+  this.host = params.host || &#x27;localhost&#x27;;
+  this.username = params.username || &#x27;username&#x27;;
+  this.password = params.password || &#x27;password&#x27;;
+  this.enable_debug = params.debug || false;
+  this.reconnect = params.reconnect || false;
+  this.reconnect_after = params.reconnect_after || 3000;
+  this.events = (params.events != undefined ? params.events : true);
+  this.identifier = params.identifier || false;
+  this.ami_encoding = params.ami_encoding || &#x27;ascii&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.super_" id="apidoc.element.asterisk-ami.AsteriskAmi.super_">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.asterisk-ami.AsteriskAmi.prototype" id="apidoc.module.asterisk-ami.AsteriskAmi.prototype">module asterisk-ami.AsteriskAmi.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.connect" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.connect">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>connect
+        <span class="apidocSignatureSpan">(connect_cb, data_cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect = function (connect_cb, data_cb){
+  var self = this;
+  self.debug(&#x27;running ami connect&#x27;);
+  self.socket = null;
+  self.socket = this.net.createConnection(this.port, this.host);//reopen it
+  self.socket.setEncoding(this.ami_encoding);
+  self.socket.setKeepAlive(true, 500);
+
+  self.socket.on(&#x27;connect&#x27;, function(){
+    self.debug(&#x27;connected to Asterisk AMI&#x27;);
+    //login to the manager interface
+    self.send({Action: &#x27;login&#x27;, Username : self.username, Secret : self.password, Events: (self.events ? &#x27;on&#x27; : &#x27;off&#x27;)});
+    if(connect_cb &#x26;&#x26; typeof connect_cb == &#x27;function&#x27;){
+      connect_cb();
+    }
+  }).on(&#x27;data&#x27;, function(data){
+    if(data_cb &#x26;&#x26; typeof data_cb == &#x27;function&#x27;){
+      data_cb(data);
+    }
+    var all_events = self.processData(data);
+    for(var i in all_events){
+      var result = all_events[i];
+      if(result.response &#x26;&#x26; result.message &#x26;&#x26; /Authentication/gi.exec(result.message) == &#x27;Authentication&#x27;){
+        self.emit(&#x27;ami_login&#x27;, ((result.response == &#x27;Success&#x27;) ? true : false) ,result);
+      }
+      self.emit(&#x27;ami_data&#x27;, result);
+    }
+  }).on(&#x27;drain&#x27;, function(){
+    self.debug(&#x27;Asterisk Socket connection drained&#x27;);
+    self.emit(&#x27;ami_socket_drain&#x27;);
+  }).on(&#x27;error&#x27;, function(error){
+    if(error){
+      self.debug(&#x27;Asterisk Socket connection error, error was: &#x27; + error);//prob lost connection to ami due to asterisk restarting
+ so restart the connection
+    }
+    self.emit(&#x27;ami_socket_error&#x27;, error);
+  }).on(&#x27;timeout&#x27;,function(){
+    self.debug(&#x27;Asterisk Socket connection has timed out&#x27;);
+    self.emit(&#x27;ami_socket_timeout&#x27;);
+  }).on(&#x27;end&#x27;, function() {
+    self.debug(&#x27;Asterisk Socket connection ran end event&#x27;);
+    self.emit(&#x27;ami_socket_end&#x27;);
+  }).on(&#x27;close&#x27;, function(had_error){
+    self.debug(&#x27;Asterisk Socket connection closed, error status - &#x27; + had_error);
+    self.emit(&#x27;ami_socket_close&#x27;, had_error);
+    if(self.reconnect){
+      self.debug(&#x27;Reconnecting to AMI in &#x27; + self.reconnect_after);
+      setTimeout(function() {
+        self.connect(connect_cb, data_cb);
+      }, self.reconnect_after);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var ami = new AsteriskAmi( { host: &#x27;hostname&#x27;, username: &#x27;username&#x27;, password: &#x27;secret&#x27; } );
+
+ami.on(&#x27;ami_data&#x27;, function(data){
+	console.log(&#x27;AMI DATA&#x27;, data);
+	//decide between Events and non events here and what to do with them, maybe run an event emitter for the ones you care about
+});
+
+ami.<span class="apidocCodeKeywordSpan">connect</span>(function(){
+	ami.send({action: &#x27;Ping&#x27;});//run a callback event when we have connected to the socket
+});//connect creates a socket connection and sends the login action
+
+ami.send({action: &#x27;Ping&#x27;});
+```
+
+##Events
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.debug" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.debug">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>debug
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function (data){
+  if(this.enable_debug){
+    console.log(data);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.destroy" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.destroy">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>destroy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy = function (){
+  this.socket.destroy();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log(&#x27;every time data comes back in the socket, this callback is called, useful for recording stats on data&#x27;,
+raw_data);
+})
+
+.disconnect() //logs out of the AMI and then closes the connection, sets reconnect to false so that it wont try and reconnect
+
+.send({action: &#x27;Ping&#x27;}) //send an ami call, pass in a javascript object with the params you want to send the ami
+
+.<span class="apidocCodeKeywordSpan">destroy</span>() //terminates the connection to the ami socket if say disconnect fails, or
+you&#x27;ve lost connection to the ami and you&#x27;re not using reconnect: true as a param
+
+```
+
+
+## Configuration options
+
+AsteriskAmi has preset/configurable options, you can set these via an object passed in to AsteriskAmi
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.disconnect" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.disconnect">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>disconnect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disconnect = function (){
+  this.reconnect = false;//just in case we wanted it to reconnect before, we&#x27;ve asked for it to be closed this time so make sure
+ it doesnt reconnect
+  this.socket.end(this.generateSocketData({Action: &#x27;Logoff&#x27;}));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+.connect(function(){
+  console.log(&#x27;connection to AMI socket successful&#x27;);
+}, function(raw_data){
+  console.log(&#x27;every time data comes back in the socket, this callback is called, useful for recording stats on data&#x27;,
+raw_data);
+})
+
+.<span class="apidocCodeKeywordSpan">disconnect</span>() //logs out of the AMI and then closes the connection, sets reconnect to
+ false so that it wont try and reconnect
+
+.send({action: &#x27;Ping&#x27;}) //send an ami call, pass in a javascript object with the params you want to send the ami
+
+.destroy() //terminates the connection to the ami socket if say disconnect fails, or you&#x27;ve lost connection to the ami and
+you&#x27;re not using reconnect: true as a param
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateRandom" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateRandom">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>generateRandom
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateRandom = function (){
+  return Math.floor(Math.random()*100000000000000000);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateSocketData" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.generateSocketData">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>generateSocketData
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateSocketData = function (obj){
+  var str = &#x27;&#x27;;
+  for(var i in obj){
+    str += (i + &#x27;: &#x27; + obj[i] + this.CRLF);
+  }
+  return str + this.CRLF;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.processData" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.processData">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>processData
+        <span class="apidocSignatureSpan">(data, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processData = function (data, cb){
+<span class="apidocCodeCommentSpan">  /*
+  Thanks to mscdex for this bit of code that takes many lots of data and sorts them out into one if needed!
+  https://github.com/mscdex/node-asterisk/blob/master/asterisk.js
+  */
+</span>  data = data.toString();
+  if (data.substr(0, 21) == &#x22;Asterisk Call Manager&#x22;){
+    data = data.substr(data.indexOf(this.CRLF)+2); // skip the server greeting when first connecting
+  }
+  this.buffer += data;
+  var iDelim, info, headers, kv, type, all_events = [];
+  while ((iDelim = this.buffer.indexOf(this.END)) &#x3e; -1) {
+    info = this.buffer.substring(0, iDelim+2).split(this.CRLF);
+    this.buffer = this.buffer.substr(iDelim + 4);
+    result = {}; type = &#x22;&#x22;; kv = [];
+    for (var i=0,len=info.length; i&#x3c;len; i++) {
+      if (info[i].indexOf(&#x22;: &#x22;) == -1){
+        continue;
+      }
+      kv = info[i].split(&#x22;: &#x22;, 2);
+      kv[0] = kv[0].toLowerCase().replace(&#x22;-&#x22;, &#x22;&#x22;);
+      if (i==0){
+        type = kv[0];
+      }
+      result[kv[0]] = kv[1];
+    }
+    if(this.identifier){
+      result.identifier = this.identifier;
+    }
+    all_events.push(result);
+  }
+  return all_events;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.asterisk-ami.AsteriskAmi.prototype.send" id="apidoc.element.asterisk-ami.AsteriskAmi.prototype.send">
+        function <span class="apidocSignatureSpan">asterisk-ami.AsteriskAmi.prototype.</span>send
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (obj, cb) {
+  //check state of connection here, if not up then bail out
+  if(!obj.ActionID){
+      obj.ActionID = this.generateRandom();
+  }
+
+  //maybe i should be checking if this socket is writeable
+  if(this.socket != null &#x26;&#x26; this.socket.writable){
+    this.debug(obj);
+    this.socket.write(this.generateSocketData(obj), this.ami_encoding, cb);
+  }else{
+    this.debug(&#x27;cannot write to Asterisk Socket&#x27;);
+    this.emit(&#x27;ami_socket_unwritable&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+ami.on(&#x27;ami_data&#x27;, function(data){
+	console.log(&#x27;AMI DATA&#x27;, data);
+	//decide between Events and non events here and what to do with them, maybe run an event emitter for the ones you care about
+});
+
+ami.connect(function(){
+	ami.<span class="apidocCodeKeywordSpan">send</span>({action: &#x27;Ping&#x27;});//run a callback event when we have connected to
+ the socket
+});//connect creates a socket connection and sends the login action
+
+ami.send({action: &#x27;Ping&#x27;});
+```
+
+##Events
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
